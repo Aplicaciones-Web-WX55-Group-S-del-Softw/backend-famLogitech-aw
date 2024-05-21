@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "53wBkSzjwuDAZ9c8k2y8q1vWj2ErjigKXePuZxcbXpi7WvbSUSkjmocgmtg+lST/mePr/pATLKfEslEPT6OZnA==",
+  "success": true,
+  "projectFilePath": "/Users/alumnos/Desktop/clase9c/backend-famLogitech-aw/backend-famLogitech-aw/backend-famLogitech-aw.csproj",
+  "expectedPackageFiles": [
+    "/Users/alumnos/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "/Users/alumnos/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/Users/alumnos/.nuget/packages/swashbuckle.aspnetcore/6.4.0/swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
+    "/Users/alumnos/.nuget/packages/swashbuckle.aspnetcore.swagger/6.4.0/swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
+    "/Users/alumnos/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.4.0/swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
+    "/Users/alumnos/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.4.0/swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}
