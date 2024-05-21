@@ -1060,24 +1060,26 @@
     ]
   },
   "packageFolders": {
-    "/Users/alumnos/.nuget/packages/": {}
+    "C:\\Users\\mathi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/alumnos/Desktop/clase9c/backend-famLogitech-aw/backend-famLogitech-aw/backend-famLogitech-aw.csproj",
+      "projectUniqueName": "D:\\UPC UNI\\Ciclo 5\\Aplicaciones Web\\backend-famLogitech-aw\\backend-famLogitech-aw\\backend-famLogitech-aw.csproj",
       "projectName": "backend-famLogitech-aw",
-      "projectPath": "/Users/alumnos/Desktop/clase9c/backend-famLogitech-aw/backend-famLogitech-aw/backend-famLogitech-aw.csproj",
-      "packagesPath": "/Users/alumnos/.nuget/packages/",
-      "outputPath": "/Users/alumnos/Desktop/clase9c/backend-famLogitech-aw/backend-famLogitech-aw/obj/",
+      "projectPath": "D:\\UPC UNI\\Ciclo 5\\Aplicaciones Web\\backend-famLogitech-aw\\backend-famLogitech-aw\\backend-famLogitech-aw.csproj",
+      "packagesPath": "C:\\Users\\mathi\\.nuget\\packages\\",
+      "outputPath": "D:\\UPC UNI\\Ciclo 5\\Aplicaciones Web\\backend-famLogitech-aw\\backend-famLogitech-aw\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/alumnos/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\mathi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1128,7 +1130,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\mathi\\.dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
