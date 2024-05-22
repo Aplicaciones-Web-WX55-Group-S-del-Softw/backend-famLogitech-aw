@@ -10,8 +10,8 @@ public interface IFarmRepository: IBaseRepository<Farm>
     Task<IEnumerable<Farm>> FindByLocationAsync(string location);
  
     Task<IEnumerable<Farm>> FindByAllFarmAsync();
-    
    
+    
     Task<Farm> FindByIdx(int id);
   
 }
