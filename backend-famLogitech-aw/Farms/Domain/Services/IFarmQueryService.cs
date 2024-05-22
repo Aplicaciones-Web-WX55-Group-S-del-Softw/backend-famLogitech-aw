@@ -1,4 +1,5 @@
 using backend_famLogitech_aw.Farms.Domain.Model.Aggregates;
+using backend_famLogitech_aw.Farms.Domain.Model.Commands;
 using backend_famLogitech_aw.Farms.Domain.Model.Queries;
 
 namespace backend_famLogitech_aw.Farms.Domain.Services;
@@ -6,11 +7,13 @@ namespace backend_famLogitech_aw.Farms.Domain.Services;
 public interface IFarmQueryService
 {
     Task<Farm> Handle(GetFarmByIdQuery query);
-    /*
+   
     Task<IEnumerable<Farm>> Handle(GetFarmByLocationQuery query);
-    Task<IEnumerable<Farm>> Handle(GetAllFarmQuery query);
     
-    */
+   Task<IEnumerable<Farm>> Handle(GetAllFarmQuery query); /*List*/
+
+   Task<Farm> Handle(PutFarmIdQuery query); /*update*/
+
 
     
 }

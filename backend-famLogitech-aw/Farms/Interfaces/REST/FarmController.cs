@@ -1,4 +1,6 @@
 using System.Net.Mime;
+using backend_famLogitech_aw.Farms.Domain.Model.Aggregates;
+using backend_famLogitech_aw.Farms.Domain.Model.Commands;
 using backend_famLogitech_aw.Farms.Domain.Model.Queries;
 using backend_famLogitech_aw.Farms.Domain.Services;
 using backend_famLogitech_aw.Farms.Interfaces.REST.Resources;
@@ -32,17 +34,36 @@ public class FarmController(IFarmCommandService farmCommandService, IFarmQuerySe
         return Ok(resource);
     }
 
-    /*
-    [HttpGet("{location}")]
-
-    private async Task<ActionResult> GetAllFarmByLocation(string location)
+    
+    [HttpGet("location/{location}")]
+    public async Task<ActionResult> GetAllFarmByLocation(string location)
     {
         var getAllFarmByLocationQuery = new GetFarmByLocationQuery(location);
         var result = await farmQueryService.Handle(getAllFarmByLocationQuery);
         var resources = result.Select(FarmResourceFromEntityAssembler.ToResourceFromEntity);
         return Ok(resources);
     }
-    */
     
+    [HttpGet("all")]
+    public async Task<ActionResult> GetAllFarms()
+    {        
+        var getAllFarms = new GetAllFarmQuery();
+        var result = await farmQueryService.Handle(getAllFarms);
+        var resources = result.Select(FarmResourceFromEntityAssembler.ToResourceFromEntity);
+        return Ok(resources);
+    }
     
+    [HttpPut("{id}")]
+    /* CreateFarmSource([FromBody] CreateFarmResource resource)*/
+    public async Task<ActionResult> UpdateFarm(int id,[FromBody] UpdateFarmCommand  updatedFarm)
+    {
+        
+        var createFarmCommand = CreateFarmCommandFromResourceAssembler.ToCommandFromResource(resource);
+
+        var putFarmCommand  =  UpdateFarmCommandFr(id, updatedFarm);
+        var result = await farmQueryService.Handle(putFarmByIdQuery);
+        var resource = FarmResourceFromEntityAssembler.ToResourceFromEntity(result);
+        
+        return Ok(resource);
+    }
 }

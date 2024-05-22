@@ -1,4 +1,5 @@
 using backend_famLogitech_aw.Farms.Domain.Model.Aggregates;
+using backend_famLogitech_aw.Farms.Domain.Model.Commands;
 using backend_famLogitech_aw.Farms.Domain.Model.Queries;
 using backend_famLogitech_aw.Farms.Domain.Repositories;
 using backend_famLogitech_aw.Farms.Domain.Services;
@@ -12,15 +13,21 @@ public class FarmQueryService(IFarmRepository farmRepository) : IFarmQueryServic
         return await farmRepository.FindByIdAsync(query.Id);
     }
 
-    /*
+
     public async Task<IEnumerable<Farm>> Handle(GetFarmByLocationQuery query)
     {
         return await farmRepository.FindByLocationAsync(query.Location);
     }
 
+
     public async Task<IEnumerable<Farm>> Handle(GetAllFarmQuery query)
     {
-        return await farmRepository.FindByAllFarmAsync(query.Id);
+    return await farmRepository.FindByAllFarmAsync();
     }
-    */
+    
+    public async Task<Farm> Handle(PutFarmIdQuery query)
+    {
+        return await farmRepository.UpdateFarmByIdAsync(query.Id,query.UpdatedFarm);
+    }
+
 }
