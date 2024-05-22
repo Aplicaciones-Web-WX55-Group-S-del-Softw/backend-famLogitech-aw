@@ -12,6 +12,7 @@ public class FarmQueryService(IFarmRepository farmRepository) : IFarmQueryServic
         return await farmRepository.FindByIdAsync(query.Id);
     }
 
+    /*
     public async Task<IEnumerable<Farm>> Handle(GetFarmByLocationQuery query)
     {
         return await farmRepository.FindByLocationAsync(query.Location);
@@ -21,4 +22,5 @@ public class FarmQueryService(IFarmRepository farmRepository) : IFarmQueryServic
     {
         return await farmRepository.FindByAllFarmAsync(query.Id);
     }
+    */
 }

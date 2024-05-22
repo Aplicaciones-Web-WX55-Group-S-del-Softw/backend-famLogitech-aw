@@ -10,7 +10,7 @@ public class FarmCommandService(IUnitOfWork unitOfWork, IFarmRepository farmRepo
 {
     public async Task<Farm> Handle(CreateFarmCommand command)
     {
-        var farmNew = await farmRepository.FindById(command.Id);
+        var farmNew = await farmRepository.FindByIdx(command.Id);
         if (farmNew != null)
             throw new Exception("Farm with ID already exists");
         farmNew = new Farm(command);

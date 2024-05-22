@@ -23,7 +23,7 @@ public class FarmRepository : BaseRepository<Farm>, IFarmRepository
         return await Context.Set<Farm>().Where(f => f.Id == id).ToListAsync();
     }
 
-    public async  Task<Farm> FindById(int id)
+    public async  Task<Farm> FindByIdx(int id)
     {
         
         return await Context.Set<Farm>().FirstOrDefaultAsync(f => f.Id == id);

@@ -59,3 +59,4 @@ C:\Users\usuario\Documents\Development\si730\backend-famLogitech-awx\backend-fam
 C:\Users\usuario\Documents\Development\si730\backend-famLogitech-awx\backend-famLogitech-aw\obj\Debug\net8.0\backend-famLogitech-aw.pdb
 C:\Users\usuario\Documents\Development\si730\backend-famLogitech-awx\backend-famLogitech-aw\obj\Debug\net8.0\backend-famLogitech-aw.genruntimeconfig.cache
 C:\Users\usuario\Documents\Development\si730\backend-famLogitech-awx\backend-famLogitech-aw\obj\Debug\net8.0\ref\backend-famLogitech-aw.dll
+C:\Users\usuario\Documents\Development\si730\backend-famLogitech-awx\backend-famLogitech-aw\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.Design.dll

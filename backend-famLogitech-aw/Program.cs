@@ -16,9 +16,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers(
     options =>
     {
-        options.Conventions.Add(new KebabCaseRoutingNamingConvention());
-    }
-    );
+        options.Conventions.Add(new KebabCaseRoutingNamingConvention());   
+    });
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -60,6 +59,7 @@ using (var scope = app.Services.CreateScope())
     var context = services.GetRequiredService<AppDbContext>();
     context.Database.EnsureCreated();
 }
+
 
 if (app.Environment.IsDevelopment())
 {

@@ -15,9 +15,10 @@ public class AppDbContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder builder)
     {
-        builder.AddCreatedUpdatedInterceptor();   
+        builder.AddCreatedUpdatedInterceptor();
         base.OnConfiguring(builder);
     }
+
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
