@@ -34,6 +34,15 @@ public class Farm
         this.Certificate = command.Certificate;
         this.Product = command.Product;
     }
+    public void Update(UpdateFarmCommand command)
+    {
+        this.FarmName = command.FarmName;
+        this.Location = command.Location;
+        this.Type = command.Type;
+        this.Infrastructure = command.Infrastructure;
+        this.Certificate = command.Certificate;
+        this.Product = command.Product;
+    }
 
 
 }

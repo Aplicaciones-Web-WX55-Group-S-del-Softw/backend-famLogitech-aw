@@ -52,6 +52,13 @@ public class FarmController(IFarmCommandService farmCommandService, IFarmQuerySe
         var resources = result.Select(FarmResourceFromEntityAssembler.ToResourceFromEntity);
         return Ok(resources);
     }
+    [HttpPut("{id}")]
+    public async Task<ActionResult> UpdateFarm( [FromBody] UpdateFarmResource resource)
+    {
+        var updateFarmCommand = UpdateFarmCommandFromResourceAssembler.ToCommandFromResource(resource);
+        var result = await farmCommandService.Handle(updateFarmCommand);
+        return Ok(FarmResourceFromEntityAssembler.ToResourceFromEntity(result));
+    }
     
   
 }
