@@ -1,7 +1,7 @@
 using backend_famLogitech_aw.Farms.Domain.Model.Aggregates;
 using backend_famLogitech_aw.Farms.Interfaces.REST.Resources;
 
-namespace backend_famLogitech_aw.Farms.Interfaces.Transform;
+namespace backend_famLogitech_aw.Farms.Interfaces.REST.Transform;
 
 public static class FarmResourceFromEntityAssembler
 {

@@ -29,22 +29,5 @@ public class FarmRepository : BaseRepository<Farm>, IFarmRepository
         return await Context.Set<Farm>().FirstOrDefaultAsync(f => f.Id == id);
     }
 
-    public async Task<Farm> UpdateFarmByIdAsync(int Id,Farm updatedFarm)
-    {
-        var existingFarm = await Context.Set<Farm>().FirstOrDefaultAsync(f => f.Id == updatedFarm.Id);
-        if (existingFarm == null)
-        {
-            return null; 
-        }
-        updatedFarm.FarmName = updatedFarm.FarmName;
-        updatedFarm.Location = updatedFarm.Location;
-        updatedFarm.Type = updatedFarm.Type;
-        updatedFarm.Infrastructure = updatedFarm.Infrastructure;
-        updatedFarm.Certificate = updatedFarm.Certificate;
-        updatedFarm.Product = updatedFarm.Product;
-
-        await Context.SaveChangesAsync();
-
-        return updatedFarm;
-    }
+   
 }

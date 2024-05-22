@@ -13,5 +13,5 @@ public interface IFarmRepository: IBaseRepository<Farm>
     
    
     Task<Farm> FindByIdx(int id);
-    Task<Farm> UpdateFarmByIdAsync(int Id,Farm farm);
+  
 }

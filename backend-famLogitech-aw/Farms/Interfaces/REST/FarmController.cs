@@ -4,7 +4,7 @@ using backend_famLogitech_aw.Farms.Domain.Model.Commands;
 using backend_famLogitech_aw.Farms.Domain.Model.Queries;
 using backend_famLogitech_aw.Farms.Domain.Services;
 using backend_famLogitech_aw.Farms.Interfaces.REST.Resources;
-using backend_famLogitech_aw.Farms.Interfaces.Transform;
+using backend_famLogitech_aw.Farms.Interfaces.REST.Transform;
 using Microsoft.AspNetCore.Mvc;
 
 namespace backend_famLogitech_aw.Farms.Interfaces.REST;
@@ -53,17 +53,5 @@ public class FarmController(IFarmCommandService farmCommandService, IFarmQuerySe
         return Ok(resources);
     }
     
-    [HttpPut("{id}")]
-    /* CreateFarmSource([FromBody] CreateFarmResource resource)*/
-    public async Task<ActionResult> UpdateFarm(int id,[FromBody] UpdateFarmCommand  updatedFarm)
-    {
-        
-        var createFarmCommand = CreateFarmCommandFromResourceAssembler.ToCommandFromResource(resource);
-
-        var putFarmCommand  =  UpdateFarmCommandFr(id, updatedFarm);
-        var result = await farmQueryService.Handle(putFarmByIdQuery);
-        var resource = FarmResourceFromEntityAssembler.ToResourceFromEntity(result);
-        
-        return Ok(resource);
-    }
+  
 }
