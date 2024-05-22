@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "/Users/alumnos/Development/2401/si730/wx55/backend-famLogitech-awx/backend-famLogitech-aw/backend-famLogitech-aw.csproj": {}
+    "C:\\Users\\usuario\\Documents\\Development\\si730\\backend-famLogitech-aw\\backend-famLogitech-aw\\backend-famLogitech-aw.csproj": {}
   },
   "projects": {
-    "/Users/alumnos/Development/2401/si730/wx55/backend-famLogitech-awx/backend-famLogitech-aw/backend-famLogitech-aw.csproj": {
+    "C:\\Users\\usuario\\Documents\\Development\\si730\\backend-famLogitech-aw\\backend-famLogitech-aw\\backend-famLogitech-aw.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/alumnos/Development/2401/si730/wx55/backend-famLogitech-awx/backend-famLogitech-aw/backend-famLogitech-aw.csproj",
+        "projectUniqueName": "C:\\Users\\usuario\\Documents\\Development\\si730\\backend-famLogitech-aw\\backend-famLogitech-aw\\backend-famLogitech-aw.csproj",
         "projectName": "backend-famLogitech-aw",
-        "projectPath": "/Users/alumnos/Development/2401/si730/wx55/backend-famLogitech-awx/backend-famLogitech-aw/backend-famLogitech-aw.csproj",
-        "packagesPath": "/Users/alumnos/.nuget/packages/",
-        "outputPath": "/Users/alumnos/Development/2401/si730/wx55/backend-famLogitech-awx/backend-famLogitech-aw/obj/",
+        "projectPath": "C:\\Users\\usuario\\Documents\\Development\\si730\\backend-famLogitech-aw\\backend-famLogitech-aw\\backend-famLogitech-aw.csproj",
+        "packagesPath": "C:\\Users\\usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\usuario\\Documents\\Development\\si730\\backend-famLogitech-aw\\backend-famLogitech-aw\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/alumnos/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -82,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
