@@ -18,9 +18,14 @@ public class FarmRepository : BaseRepository<Farm>, IFarmRepository
         return await Context.Set<Farm>().Where(f => f.Location == location).ToListAsync();
     }
 
-    public Task<Farm> FindById(int id)
+    public async Task<IEnumerable<Farm>> FindByAllFarmAsync(int id)
+    {
+        return await Context.Set<Farm>().Where(f => f.Id == id).ToListAsync();
+    }
+
+    public async  Task<Farm> FindById(int id)
     {
         
-        return Context.Set<Farm>().FirstOrDefaultAsync(f => f.Id == id);
+        return await Context.Set<Farm>().FirstOrDefaultAsync(f => f.Id == id);
     }
 }

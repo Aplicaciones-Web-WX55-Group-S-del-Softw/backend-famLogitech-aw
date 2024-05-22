@@ -15,6 +15,7 @@ public class Farm
 
     protected Farm()
     {
+        this.Id = 0;
         this.FarmName = string.Empty;
         this.Location = string.Empty;
         this.Type = string.Empty;
@@ -25,6 +26,7 @@ public class Farm
 
     public Farm(CreateFarmCommand command)
     {
+        this.Id = command.Id;
         this.FarmName = command.FarmName;
         this.Location = command.Location;
         this.Type = command.Type;
