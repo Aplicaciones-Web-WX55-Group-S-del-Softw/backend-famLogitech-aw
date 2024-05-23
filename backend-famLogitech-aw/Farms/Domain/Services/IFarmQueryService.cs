@@ -1,5 +1,4 @@
 using backend_famLogitech_aw.Farms.Domain.Model.Aggregates;
-using backend_famLogitech_aw.Farms.Domain.Model.Commands;
 using backend_famLogitech_aw.Farms.Domain.Model.Queries;
 
 namespace backend_famLogitech_aw.Farms.Domain.Services;

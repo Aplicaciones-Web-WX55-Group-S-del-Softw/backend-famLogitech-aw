@@ -47,10 +47,13 @@ builder.Services.AddDbContext<AppDbContext>(
 builder.Services.AddRouting(options => options.LowercaseUrls = true);
 
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
 builder.Services.AddScoped<IFarmRepository, FarmRepository>();
 builder.Services.AddScoped<IFarmCommandService, FarmCommandService>();
 builder.Services.AddScoped<IFarmQueryService, FarmQueryService>();
-
+builder.Services.AddScoped<IShedRepository, ShedRepository>();
+builder.Services.AddScoped<IShedCommandService, ShedCommandService>();
+builder.Services.AddScoped<IShedQueryService, ShedQueryService>();
 
 var app = builder.Build();
 using (var scope = app.Services.CreateScope())
