@@ -1,3 +1,4 @@
+using backend_famLogitech_aw.Animals.Domain.Model.Aggregates;
 using backend_famLogitech_aw.Farms.Domain.Model.Aggregates;
 using backend_famLogitech_aw.Shared.Infrastructure.Persistence.EFC.Configuration.Extensions;
 using EntityFrameworkCore.CreatedUpdatedDate.Extensions;
@@ -39,6 +40,16 @@ namespace backend_famLogitech_aw.Shared.Infrastructure.Persistence.EFC.Configura
             builder.Entity<Shed>().Property(f => f.Location);
             builder.Entity<Shed>().Property(f => f.Type);
             
+            builder.UseSnakeCaseNamingConvention();
+            
+            //Configuracion de la entidad Animal
+            builder.Entity<Animal>().ToTable("Animals");
+            builder.Entity<Animal>().HasKey(f => f.Id);
+            builder.Entity<Animal>().Property(f => f.Id).IsRequired().ValueGeneratedOnAdd();
+            builder.Entity<Animal>().Property(f => f.Age);
+            builder.Entity<Animal>().Property(f => f.Location);
+            builder.Entity<Animal>().Property(f => f.HealthState);
+            builder.Entity<Animal>().Property(f => f.ShedId);
             builder.UseSnakeCaseNamingConvention();
         }
     }
