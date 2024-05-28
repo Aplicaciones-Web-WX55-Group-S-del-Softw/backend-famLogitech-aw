@@ -1,4 +1,12 @@
 
+using backend_famLogitech_aw.Animals.Application.Internal.CommandServices;
+using backend_famLogitech_aw.Animals.Application.Internal.QueryServices;
+using backend_famLogitech_aw.Animals.Domain.Repositories;
+using backend_famLogitech_aw.Animals.Domain.Services;
+using backend_famLogitech_aw.Crops.Application.Internal.CommandServices;
+using backend_famLogitech_aw.Crops.Domain.Repositories;
+using backend_famLogitech_aw.Crops.Domain.Services;
+using backend_famLogitech_aw.Crops.Infrastructure.Persistence.EFC.Repositories;
 using backend_famLogitech_aw.Farms.Application.Internal.CommandServices;
 using backend_famLogitech_aw.Farms.Application.Internal.QueryServices;
 using backend_famLogitech_aw.Farms.Domain.Repositories;
@@ -55,6 +63,14 @@ builder.Services.AddScoped<IFarmQueryService, FarmQueryService>();
 builder.Services.AddScoped<IShedRepository, ShedRepository>();
 builder.Services.AddScoped<IShedCommandService, ShedCommandService>();
 builder.Services.AddScoped<IShedQueryService, ShedQueryService>();
+
+builder.Services.AddScoped<ICropRepository, CropRepository>();
+builder.Services.AddScoped<ICropCommandService, CropCommandService>();
+builder.Services.AddScoped<ICropQueryService, CropQueryService>();
+
+builder.Services.AddScoped<IAnimalRepository, AnimalRepository>();
+builder.Services.AddScoped<IAnimalCommandService, AnimalCommandService>();
+builder.Services.AddScoped<IAnimalQueryService, AnimalQueryService>();
 
 var app = builder.Build();
 using (var scope = app.Services.CreateScope())

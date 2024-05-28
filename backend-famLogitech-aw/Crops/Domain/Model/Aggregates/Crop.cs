@@ -27,5 +27,23 @@ public class Crop
         this.Quantity = command.Quantity;
         this.ShedId = command.ShedId;
     }
+
+    public void Update(UpdateCropCommand command)
+    {
+        this.PlantingDate = command.PlantingDate;
+        this.Type = command.Type;
+        this.Quantity = command.Quantity;
+        this.ShedId = command.ShedId;
+    }
+    //todo implement delete and read
+    public void Delete(DeleteCropCommand command)
+    {
+        this.Id = command.Id;
+    }
     
+    public void Read(ReadCropCommand command)
+    {
+        this.Id = command.Id;
+    }
 }
+    
