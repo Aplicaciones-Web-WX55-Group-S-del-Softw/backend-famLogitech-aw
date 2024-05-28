@@ -21,8 +21,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="profiles\Application\" />
-      <Folder Include="profiles\Infrastructure\" />
+      <Folder Include="profiles\Infrastructure\EFC\" />
       <Folder Include="profiles\Interfaces\" />
     </ItemGroup>
 
