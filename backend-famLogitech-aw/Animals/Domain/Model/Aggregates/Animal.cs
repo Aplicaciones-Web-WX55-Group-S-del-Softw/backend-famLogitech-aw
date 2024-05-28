@@ -26,6 +26,35 @@ public class Animal
         this.Location = command.Location;
         this.HealthState = command.HealthState;
     }
+   
+    
+    public void Update(UpdateAnimalCommand command)
+    {
+        this.Name = command.Name;
+        this.Age = command.Age;
+        this.Location = command.Location;
+        this.HealthState = command.HealthState;
+        this.ShedId = command.ShedId;
+    }
+    
+    public void Delete(DeleteAnimalCommand command)
+    {
+        //lo que no sé es si el id se borra o no, me parece que nomas se vacia todo, entonces que?
+        this.Name = string.Empty;
+        this.Age = string.Empty;
+        this.Location = string.Empty;
+        this.HealthState = string.Empty;
+        this.ShedId = 0;
+    }
+    
+    public void Read(ReadAnimalCommand command)
+    {
+        this.Name = command.Name;
+        this.Age = command.Age;
+        this.Location = command.Location;
+        this.HealthState = command.HealthState;
+        this.ShedId = command.ShedId;
+    }
     
     
 }

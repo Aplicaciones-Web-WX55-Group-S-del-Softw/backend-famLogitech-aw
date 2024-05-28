@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("backend-famLogitech-aw")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2b8e1593df42b81df6d6c1bb28db1555a48c9152")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3a45de7646f8e525a8a5a77e0b48fd15b7c440a5")]
 [assembly: System.Reflection.AssemblyProductAttribute("backend-famLogitech-aw")]
 [assembly: System.Reflection.AssemblyTitleAttribute("backend-famLogitech-aw")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -20,4 +20,9 @@ public class AnimalRepository : BaseRepository<Animal>, IAnimalRepository
     {
         return await Context.Set<Animal>().FirstOrDefaultAsync(f => f.ShedId == shedId);
     }
+    
+    public async Task<Animal> FindByIdAsync(int id)
+    {
+        return await Context.Set<Animal>().FirstOrDefaultAsync(f => f.Id == id);
+    }
 }
