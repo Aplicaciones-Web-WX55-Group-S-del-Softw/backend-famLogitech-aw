@@ -20,4 +20,10 @@
       <Compile Remove="Farms\Domain\Model\Queries\PutFarmByIdQuery.cs" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="profiles\Application\" />
+      <Folder Include="profiles\Infrastructure\" />
+      <Folder Include="profiles\Interfaces\" />
+    </ItemGroup>
+
 </Project>
