@@ -23,10 +23,8 @@
     <ItemGroup>
       <Folder Include="Crops\Application\Internal\CommandServices\" />
       <Folder Include="Crops\Application\Internal\QueryServices\" />
-      <Folder Include="Crops\Domain\Model\Aggregates\" />
-      <Folder Include="Crops\Domain\Model\Commands\" />
       <Folder Include="Crops\Domain\Model\Queries\" />
-      <Folder Include="Crops\Infrastructure\Persistence\EFC\Repositories\" />
+      <Folder Include="Crops\Domain\Services\" />
       <Folder Include="Crops\Interfaces\Rest\Resources\" />
       <Folder Include="Crops\Interfaces\Rest\Transform\" />
     </ItemGroup>
