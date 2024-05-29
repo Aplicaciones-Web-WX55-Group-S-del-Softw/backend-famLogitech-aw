@@ -6,7 +6,7 @@ public class Animal
 {
     public int Id { get; set; }
     public string Name { get; set; }
-    public string Age { get; set; }
+    public int Age { get; set; }
     public string Location { get; set; }
     public string HealthState { get; set; }
     public int ShedId { get; set; }
@@ -14,7 +14,7 @@ public class Animal
     protected Animal()
     {
         this.Name = string.Empty;
-        this.Age = string.Empty;
+        this.Age = 0;
         this.Location = string.Empty;
         this.HealthState = string.Empty;
     }
@@ -39,9 +39,8 @@ public class Animal
     
     public void Delete(DeleteAnimalCommand command)
     {
-        //lo que no sé es si el id se borra o no, me parece que nomas se vacia todo, entonces que?
         this.Name = string.Empty;
-        this.Age = string.Empty;
+        this.Age = 0;
         this.Location = string.Empty;
         this.HealthState = string.Empty;
         this.ShedId = 0;

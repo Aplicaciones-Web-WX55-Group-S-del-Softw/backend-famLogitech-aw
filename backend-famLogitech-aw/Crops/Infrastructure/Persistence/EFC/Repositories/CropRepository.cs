@@ -22,4 +22,10 @@ public class CropRepository : BaseRepository<Crop>, ICropRepository
     {
         return await Context.Set<Crop>().FirstOrDefaultAsync(f => f.Id == id);
     }
+
+    public async Task DeleteAsync(Crop crop)
+    {
+        Context.Set<Crop>().Remove(crop);
+        await Context.SaveChangesAsync();
+    }
 }

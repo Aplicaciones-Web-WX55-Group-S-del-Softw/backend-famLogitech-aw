@@ -8,4 +8,6 @@ public interface ICropRepository : IBaseRepository<Crop>
     Task<IEnumerable<Crop>> FindByAllCropAsync();
 
     Task<Crop> FindByIdx(int id); 
+    
+    Task DeleteAsync(Crop crop);
 }

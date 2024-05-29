@@ -25,4 +25,10 @@ public class AnimalRepository : BaseRepository<Animal>, IAnimalRepository
     {
         return await Context.Set<Animal>().FirstOrDefaultAsync(f => f.Id == id);
     }
+
+    public async Task DeleteAsync(Animal animal)
+    {
+        Context.Set<Animal>().Remove(animal);
+        await Context.SaveChangesAsync();
+    }
 }

@@ -9,5 +9,5 @@ public interface IAnimalRepository : IBaseRepository<Animal>
     Task<Animal> FindByShedId(int shedId);
     
     Task<Animal> FindByIdAsync(int id);
-    
+    Task DeleteAsync(Animal animal);
 }

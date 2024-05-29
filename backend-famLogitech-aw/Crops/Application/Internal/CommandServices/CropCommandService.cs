@@ -23,7 +23,7 @@ public class CropCommandService : ICropCommandService
     {
         var cropnew = await _cropRepository.FindByIdx(command.Id);
         if (cropnew != null)
-            throw new Exception("Farm with ID already exists");
+            throw new Exception("Crop with ID already exists");
         cropnew = new Crop(command);
         await _cropRepository.AddAsync(cropnew);
         await _unitOfWork.CompleteAsync();
@@ -34,19 +34,29 @@ public class CropCommandService : ICropCommandService
     {
         var cropUpdate = await _cropRepository.FindByIdx(command.Id);
         if (cropUpdate == null)
-            throw new Exception("Farm with ID does not exist");
+            throw new Exception("Crop with ID does not exist");
         cropUpdate.Update(command);
         await _unitOfWork.CompleteAsync();
         return cropUpdate;
     }
 
-    public Task<Crop> Handle(DeleteCropCommand command)
+    public async Task<Crop> Handle(DeleteCropCommand command)
     {
-        throw new NotImplementedException();
+        var cropToDelete = await _cropRepository.FindByIdx(command.Id);
+        if (cropToDelete == null)
+            throw new Exception("Crop with ID does not exist");
+        await _cropRepository.DeleteAsync(cropToDelete);
+        await _unitOfWork.CompleteAsync();
+        return cropToDelete;
     }
 
-    public Task<Crop> Handle(ReadCropCommand command)
+    public async Task<Crop> Handle(ReadCropCommand command)
     {
-        throw new NotImplementedException();
+        var cropToRead = await _cropRepository.FindByIdAsync(command.Id);
+        if (cropToRead == null)
+            throw new Exception("Crop with ID does not exist");
+        cropToRead.Read(command);
+        await _unitOfWork.CompleteAsync();
+        return cropToRead;
     }
 }

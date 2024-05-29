@@ -20,9 +20,4 @@
       <Compile Remove="Farms\Domain\Model\Queries\PutFarmByIdQuery.cs" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Crops\Application\Internal\QueryServices\" />
-      <Folder Include="Crops\Domain\Model\Queries\" />
-    </ItemGroup>
-
 </Project>

@@ -38,12 +38,20 @@ public class Crop
     //todo implement delete and read
     public void Delete(DeleteCropCommand command)
     {
-        this.Id = command.Id;
+        this.Id = command.Id; 
+        this.Type = command.Type;
+        this.PlantingDate = command.PlantingDate;
+        this.Quantity = command.Quantity;
+        this.ShedId = command.ShedId;
     }
     
     public void Read(ReadCropCommand command)
     {
-        this.Id = command.Id;
+        this.Id = command.Id; 
+        this.Type = command.Type;
+        this.PlantingDate = command.PlantingDate;
+        this.Quantity = command.Quantity;
+        this.ShedId = command.ShedId;
     }
 }
     

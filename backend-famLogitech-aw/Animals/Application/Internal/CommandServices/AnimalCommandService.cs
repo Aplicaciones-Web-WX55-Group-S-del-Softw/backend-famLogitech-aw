@@ -20,7 +20,6 @@ public class AnimalCommandService : IAnimalCommandService
 
     public async Task<Animal> Handle(CreateAnimalCommand command)
     {
-        //aqui que funcion de animalrepository debe ir?
         var animalnew = await _animalRepository.FindByIdAsync(command.Id); 
         if (animalnew != null)
             throw new Exception("Animal with ID already exists");
@@ -46,7 +45,7 @@ public class AnimalCommandService : IAnimalCommandService
         var animalToDelete = await _animalRepository.FindByIdAsync(command.Id);
         if (animalToDelete == null)
             throw new Exception("Animal with ID does not exist");
-        animalToDelete.Delete(command);
+        await _animalRepository.DeleteAsync(animalToDelete);
         await _unitOfWork.CompleteAsync();
         return animalToDelete;
     }
