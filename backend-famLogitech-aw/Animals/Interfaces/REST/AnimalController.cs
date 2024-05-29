@@ -58,5 +58,19 @@ public class AnimalController : ControllerBase
         return Ok(resources);
     }
     
-
+    [HttpPut("{id}")]
+    public async Task<ActionResult> UpdateAnimal( [FromBody] UpdateAnimalResource resource)
+    {
+        var updateAnimalcommand = UpdateAnimalCommandFromResourceAssembler.ToCommandFromResource(resource);
+        var result = await _animalCommandService.Handle(updateAnimalcommand);
+        return Ok(AnimalResourceFromEntityAssembler.ToResourceFromEntity(result));
+    }
+    
+    [HttpDelete("{id}")]
+    public async Task<ActionResult> DeleteCrop([FromBody] DeleteAnimalResource resource)
+    {
+        var deleteAnimalcommand = DeleteAnimalCommandFromResourceAssembler.ToCommandFromResource(resource);
+        var result = await _animalCommandService.Handle(deleteAnimalcommand);
+        return Ok(AnimalResourceFromEntityAssembler.ToResourceFromEntity(result));
+    }
 }

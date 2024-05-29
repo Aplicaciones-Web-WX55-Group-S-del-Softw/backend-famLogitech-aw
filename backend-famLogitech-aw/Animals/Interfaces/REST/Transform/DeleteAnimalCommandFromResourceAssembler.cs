@@ -5,7 +5,7 @@ namespace backend_famLogitech_aw.Animals.Interfaces.Transform;
 
 public class DeleteAnimalCommandFromResourceAssembler
 {
-    public DeleteAnimalCommand ToCommand(DeleteAnimalResource resource)
+    public static DeleteAnimalCommand ToCommandFromResource(DeleteAnimalResource resource)
     {
         return new DeleteAnimalCommand(resource.Id, resource.Name, resource.Age, resource.Location, resource.HealthState, resource.ShedId); 
     }

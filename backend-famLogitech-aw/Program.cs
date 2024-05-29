@@ -4,6 +4,7 @@ using backend_famLogitech_aw.Animals.Application.Internal.QueryServices;
 using backend_famLogitech_aw.Animals.Domain.Repositories;
 using backend_famLogitech_aw.Animals.Domain.Services;
 using backend_famLogitech_aw.Crops.Application.Internal.CommandServices;
+using backend_famLogitech_aw.Crops.Application.Internal.QueryServices;
 using backend_famLogitech_aw.Crops.Domain.Repositories;
 using backend_famLogitech_aw.Crops.Domain.Services;
 using backend_famLogitech_aw.Crops.Infrastructure.Persistence.EFC.Repositories;
