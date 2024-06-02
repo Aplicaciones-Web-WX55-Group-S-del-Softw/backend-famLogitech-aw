@@ -4,7 +4,7 @@ using backend_famLogitech_aw.Farms.Domain.Repositories;
 using backend_famLogitech_aw.Farms.Domain.Services;
 using backend_famLogitech_aw.Shared.Domain.Repositories;
 
-namespace backend_famLogitech_aw.Farms.Application.Internal.CommandServices;
+namespace backend_famLogitech_aw.Animals.Application.Internal.Sheds.CommandServices;
 
 public class ShedCommandService(IUnitOfWork unitOfWork,IShedRepository shedRepository):IShedCommandService
 {

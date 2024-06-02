@@ -4,7 +4,7 @@ namespace backend_famLogitech_aw.Animals.Domain.Model.Aggregates;
 
 public class Animal
 {
-    public int Id { get; set; }
+    public int Id { get; private set; }
     public string Name { get; set; }
     public int Age { get; set; }
     public string Location { get; set; }
@@ -17,6 +17,8 @@ public class Animal
         this.Age = 0;
         this.Location = string.Empty;
         this.HealthState = string.Empty;
+        this.ShedId = 0; 
+
     }
     
     public Animal(CreateAnimalCommand command)
@@ -25,9 +27,15 @@ public class Animal
         this.Age = command.Age;
         this.Location = command.Location;
         this.HealthState = command.HealthState;
+        this.ShedId = command.ShedId; 
     }
-   
-    
+
+    public Animal(string name)
+    {
+        Name = name;
+    }
+
+
     public void Update(UpdateAnimalCommand command)
     {
         this.Name = command.Name;

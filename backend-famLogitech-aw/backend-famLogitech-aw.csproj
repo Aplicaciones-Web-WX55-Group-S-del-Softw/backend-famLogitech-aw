@@ -20,4 +20,9 @@
       <Compile Remove="Farms\Domain\Model\Queries\PutFarmByIdQuery.cs" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Monitoring\Application\Internal\Animals\" />
+      <Folder Include="Monitoring\Application\Internal\Crops\" />
+    </ItemGroup>
+
 </Project>
