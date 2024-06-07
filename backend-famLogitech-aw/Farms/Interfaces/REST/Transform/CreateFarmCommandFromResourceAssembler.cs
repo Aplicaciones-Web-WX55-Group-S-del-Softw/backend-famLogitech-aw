@@ -10,5 +10,4 @@ public static class CreateFarmCommandFromResourceAssembler
         return new CreateFarmCommand(resource.Id, resource.FarmName, resource.Location, resource.Type,
             resource.Infrastructure, resource.Certificate, resource.Product);
     }
-    
 }
