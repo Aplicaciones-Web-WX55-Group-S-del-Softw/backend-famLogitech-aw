@@ -1,7 +1,7 @@
 using backend_famLogitech_aw.Farms.Domain.Model.Commands;
-using backend_famLogitech_aw.Farms.Interfaces.REST.Resources;
+using backend_famLogitech_aw.Farms.Interfaces.REST.Resources.Farm;
 
-namespace backend_famLogitech_aw.Farms.Interfaces.REST.Transform;
+namespace backend_famLogitech_aw.Farms.Interfaces.REST.Transform.Farm;
 
 public static class CreateFarmCommandFromResourceAssembler
 {

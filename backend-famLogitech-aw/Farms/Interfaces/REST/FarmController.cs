@@ -1,10 +1,9 @@
 using System.Net.Mime;
-using backend_famLogitech_aw.Farms.Domain.Model.Aggregates;
-using backend_famLogitech_aw.Farms.Domain.Model.Commands;
 using backend_famLogitech_aw.Farms.Domain.Model.Queries;
 using backend_famLogitech_aw.Farms.Domain.Services;
 using backend_famLogitech_aw.Farms.Interfaces.REST.Resources;
-using backend_famLogitech_aw.Farms.Interfaces.REST.Transform;
+using backend_famLogitech_aw.Farms.Interfaces.REST.Resources.Farm;
+using backend_famLogitech_aw.Farms.Interfaces.REST.Transform.Farm;
 using Microsoft.AspNetCore.Mvc;
 
 namespace backend_famLogitech_aw.Farms.Interfaces.REST;
@@ -44,7 +43,7 @@ public class FarmController(IFarmCommandService farmCommandService, IFarmQuerySe
         return Ok(resources);
     }
     
-    [HttpGet("all")]
+    [HttpGet("farm/all")]
     public async Task<ActionResult> GetAllFarms()
     {        
         var getAllFarms = new GetAllFarmQuery();
