@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\UPC UNI\\Ciclo 5\\Aplicaciones Web\\backend-famLogitech-aw\\backend-famLogitech-aw\\backend-famLogitech-aw.csproj": {}
+    "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\JetBrains\\backend-famLogitech-aw\\backend-famLogitech-aw\\backend-famLogitech-aw.csproj": {}
   },
   "projects": {
-    "D:\\UPC UNI\\Ciclo 5\\Aplicaciones Web\\backend-famLogitech-aw\\backend-famLogitech-aw\\backend-famLogitech-aw.csproj": {
+    "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\JetBrains\\backend-famLogitech-aw\\backend-famLogitech-aw\\backend-famLogitech-aw.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\UPC UNI\\Ciclo 5\\Aplicaciones Web\\backend-famLogitech-aw\\backend-famLogitech-aw\\backend-famLogitech-aw.csproj",
+        "projectUniqueName": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\JetBrains\\backend-famLogitech-aw\\backend-famLogitech-aw\\backend-famLogitech-aw.csproj",
         "projectName": "backend-famLogitech-aw",
-        "projectPath": "D:\\UPC UNI\\Ciclo 5\\Aplicaciones Web\\backend-famLogitech-aw\\backend-famLogitech-aw\\backend-famLogitech-aw.csproj",
-        "packagesPath": "C:\\Users\\mathi\\.nuget\\packages\\",
-        "outputPath": "D:\\UPC UNI\\Ciclo 5\\Aplicaciones Web\\backend-famLogitech-aw\\backend-famLogitech-aw\\obj\\",
+        "projectPath": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\JetBrains\\backend-famLogitech-aw\\backend-famLogitech-aw\\backend-famLogitech-aw.csproj",
+        "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\USUARIO\\OneDrive\\Escritorio\\JetBrains\\backend-famLogitech-aw\\backend-famLogitech-aw\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mathi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -84,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\mathi\\.dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
