@@ -3,6 +3,11 @@ using backend_famLogitech_aw.Farms.Application.Internal.QueryServices;
 using backend_famLogitech_aw.Farms.Domain.Repositories;
 using backend_famLogitech_aw.Farms.Domain.Services;
 using backend_famLogitech_aw.Farms.Infrastructure.Persistence.EFC.Repositories;
+using backend_famLogitech_aw.Ratings.Application.Internal.CommandServices;
+using backend_famLogitech_aw.Ratings.Application.Internal.QueryServices;
+using backend_famLogitech_aw.Ratings.Domain.Repositories;
+using backend_famLogitech_aw.Ratings.Domain.Services;
+using backend_famLogitech_aw.Ratings.Infrastructure.Persistence.EFC.Repositories;
 using backend_famLogitech_aw.Shared.Domain.Repositories;
 using backend_famLogitech_aw.Shared.Infrastructure.Interfaces.ASP.Configuration;
 using backend_famLogitech_aw.Shared.Infrastructure.Persistence.EFC.Configuration;
@@ -50,6 +55,11 @@ builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IFarmRepository, FarmRepository>();
 builder.Services.AddScoped<IFarmCommandService, FarmCommandService>();
 builder.Services.AddScoped<IFarmQueryService, FarmQueryService>();
+
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+builder.Services.AddScoped<IRatingRepository, RatingRepository>();
+builder.Services.AddScoped<IRatingCommandService, RatingCommandService>();
+builder.Services.AddScoped<IRatingQueryService, RatingQueryService>();
 
 
 var app = builder.Build();
